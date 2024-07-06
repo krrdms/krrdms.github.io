@@ -59,10 +59,10 @@
       <div class="col-8">
           <section id="bio" class="mt-5">
               <h3 class="display-5">Background</h3><hr>
-              My technical background includes ~20 years of technology and technology management experience. Technical certifications: SANS GSEC, GCIH, GCIA, ISC(2) CISSP, Sec+, etc. Coding experience: 
-              Python, PHP, Perl, Java, C, very limited Assembly etc. Recently completed doctoral study.<br><br>
+              My technical background includes ~20 years of technology and technology management experience. Technical certifications: SANS GPEN, GCIA, GCIH, GSEC, ISC(2) CISSP, Sec+, etc. Coding experience: 
+              Python, PHP, Perl, Java, C, limited x86 Assembly etc. Recently completed doctoral study.<br><br>
               I have been an adjunct faculty at <a href="https://www.nvcc.edu">Northern Virginia Community College</a> IET department, teaching cybersecurity courses, usually ITP270 - Programming for Cybersecurity 
-              and at <a href="https://www.gmu.edu">George Mason University</a> in the ISOM (Information Systems & Operations Management) Department.<br><br>
+              and at <a href="https://www.gmu.edu">George Mason University</a> in the ISOM (Information Systems & Operations Management) Department, MIS320.<br><br>
 
               <h3 class="display-5">Research Interests</h3><hr>
               <ul class="clist">
@@ -123,8 +123,6 @@
               <a href="#" class="badge badge-primary"></a>
             </li>                          
           </ul>
-
-
         </section>
       </div>
       <div class="col mx-auto d-block">
@@ -195,31 +193,31 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bibtex.js"></script>
-<script type="text/javascript">
- var init = function() {
-   bibtexify("#bibtex", "pubTable", {});
- };
- if (window.addEventListener) {
-   window.addEventListener('load', init, false);
- } else if (window.attachEvent) {
-   window.attachEvent('onload', init);
- }
-</script>
-<script>
-jQuery("#pubTable").on("click", "a", function(e) {
-  var $n = jQuery(this),
-      text = $n.text().toUpperCase();
-  if (text === "X") { return; }
-  try {
-    _gaq.push(['_trackEvent', "PublicationAction", text]);
-} catch(err){ }
-  if ($n.attr("href") !== "#") {
-    setTimeout(function() {
-      document.location.href = $n.attr("href");
-    }, 100);
-    return false;
-  }
-});
-</script>
+    <script type="text/javascript">
+     var init = function() {
+       bibtexify("#bibtex", "pubTable", {});
+     };
+     if (window.addEventListener) {
+       window.addEventListener('load', init, false);
+     } else if (window.attachEvent) {
+       window.attachEvent('onload', init);
+     }
+    </script>
+    <script>
+    jQuery("#pubTable").on("click", "a", function(e) {
+      var $n = jQuery(this),
+          text = $n.text().toUpperCase();
+      if (text === "X") { return; }
+      try {
+        _gaq.push(['_trackEvent', "PublicationAction", text]);
+    } catch(err){ }
+      if ($n.attr("href") !== "#") {
+        setTimeout(function() {
+          document.location.href = $n.attr("href");
+        }, 100);
+        return false;
+      }
+    });
+    </script>
   </body>
 </html>
